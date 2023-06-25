@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bank-kafka
+  namespace: default
+  labels:
+    app: bank-kafka
+spec:
+  type: NodePort
+  ports:
+    - port: 9092
+  selector:
+    app: bank-kafka
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank-kafka
+  labels:
+    app: bank-kafka
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bank-kafka
+  template:
+    metadata:
+      labels:
+        app: bank-kafka
+    spec:
+      containers:
+        - name: bank-kafka
+          image: bitnami/kafka:3.2
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 9092
+          env:
+            - name: ALLOW_PLAINTEXT_LISTENER
+              value: "yes"
+            - name: KAFKA_ADVERTISED_LISTENERS  #环境变量名称
+              value: "PLAINTEXT://localhost:9092" #环境变量的值 指向Broker的可用地址列表,这个地方必须和外网配置的连接kafka保持一致
+            - name: KAFKA_LISTENERS  #环境变量名称 kafka的broker将监听地址
+              value: "PLAINTEXT://0.0.0.0:9092"
+

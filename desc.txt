@@ -1,0 +1,14 @@
+docker docker部署用
+src下
+config 见名知意，都是配置，有web的有swagger。都是固定写法
+constants常量
+dao 数据库访问mapper mybatis框架的
+dto 数据传输对象，用做数据结构的返回，传递，转json啊
+exception 自定义 异常对象，用作全局拦截，和交易异常判断
+jwt jwt校验相关的
+message kafka消息监听
+po 实体，和数据库表做对应的
+repository 操作数据库访问的 和dao不同的地方是，repo可以有多个dao.而dao只针对某个表实体
+service 业务代码层，实际业务写的地方
+util 可删
+web 就是controller

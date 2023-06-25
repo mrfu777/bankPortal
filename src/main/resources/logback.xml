@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration >
+    <property name="format" value="[hlog][1t][%d{yyyy-MM-dd HH:mm:ss.SSS}][%p][%t][%c{1.}][%X{traceId},%X{spanId},%X{parentSpanId}][%X{title},%X{tag},%X{throwable}] - %.-102400msg%n"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${format}</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="common" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/app/common.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/app/common-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>200MB</maxFileSize>
+            <maxHistory>5</maxHistory>
+            <totalSizeCap>1GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>${format}</pattern>
+        </encoder>
+    </appender>
+
+
+    <Logger name="common" additivity="false">
+        <level value="info"/>
+        <appender-ref ref="common"/>
+    </Logger>
+
+    <!--  -->
+    <Root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="common"/>
+    </Root>
+
+</Configuration>

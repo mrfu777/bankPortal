@@ -1,0 +1,871 @@
+[hlog][1t][2023-06-25 14:33:04.961][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 14:33:04.983][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Starting BankPortalApplication on Danqius-Air with PID 67052 (/Users/danqiufu/Desktop/bankPortal/target/classes started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 14:33:04.989][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 14:33:05.415][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 14:33:07.205][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat initialized with port(s): 8090 (http)
+[hlog][1t][2023-06-25 14:33:07.226][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Initializing ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:33:07.227][INFO][main][org.apache.catalina.core.StandardService][,,][,,] - Starting service [Tomcat]
+[hlog][1t][2023-06-25 14:33:07.227][INFO][main][org.apache.catalina.core.StandardEngine][,,][,,] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+[hlog][1t][2023-06-25 14:33:07.310][INFO][main][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring embedded WebApplicationContext
+[hlog][1t][2023-06-25 14:33:07.310][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][,,][,,] - Root WebApplicationContext: initialization completed in 2259 ms
+[hlog][1t][2023-06-25 14:33:08.477][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 14:33:08.574][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:33:08.853][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 14:33:08.908][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 14:33:08.909][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 14:33:08.909][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687717988906
+[hlog][1t][2023-06-25 14:33:08.912][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 14:33:08.915][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 14:33:08.917][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Starting ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:33:08.936][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat started on port(s): 8090 (http) with context path ''
+[hlog][1t][2023-06-25 14:33:08.939][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 14:33:08.949][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 14:33:08.991][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 14:33:09.074][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:09.076][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:09.175][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:09.177][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:09.209][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 14:33:09.238][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Started BankPortalApplication in 4.632 seconds (JVM running for 5.523)
+[hlog][1t][2023-06-25 14:33:09.327][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:09.330][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:09.584][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:09.584][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:10.043][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:10.044][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:10.919][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:10.920][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:11.754][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:11.754][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:12.884][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:12.885][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:13.809][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:13.809][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:15.030][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:15.032][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:15.874][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:15.878][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:17.104][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:17.105][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:18.229][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:18.232][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:19.106][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:19.107][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:20.191][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:20.191][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:21.336][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:21.336][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:22.544][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:22.545][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:23.478][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:23.479][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:24.314][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:24.315][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:25.497][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:25.498][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:26.573][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:26.575][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:27.700][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:27.701][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:28.634][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+[hlog][1t][2023-06-25 14:33:28.636][WARN][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.NetworkClient][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+[hlog][1t][2023-06-25 14:33:28.673][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 14:33:28.674][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService
+[hlog][1t][2023-06-25 14:33:28.682][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer][,,][,,] - transactionGroup: Consumer stopped
+[hlog][1t][2023-06-25 14:33:28.707][INFO][SpringContextShutdownHook][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Shutting down ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:33:57.200][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 14:33:57.212][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Starting BankPortalApplication on Danqius-Air with PID 67438 (/Users/danqiufu/Desktop/bankPortal/target/classes started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 14:33:57.212][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 14:33:57.544][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 14:33:58.720][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat initialized with port(s): 8090 (http)
+[hlog][1t][2023-06-25 14:33:58.725][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Initializing ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:33:58.726][INFO][main][org.apache.catalina.core.StandardService][,,][,,] - Starting service [Tomcat]
+[hlog][1t][2023-06-25 14:33:58.726][INFO][main][org.apache.catalina.core.StandardEngine][,,][,,] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+[hlog][1t][2023-06-25 14:33:58.787][INFO][main][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring embedded WebApplicationContext
+[hlog][1t][2023-06-25 14:33:58.787][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][,,][,,] - Root WebApplicationContext: initialization completed in 1517 ms
+[hlog][1t][2023-06-25 14:33:59.912][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 14:34:00.006][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:34:00.305][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 14:34:00.360][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 14:34:00.361][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 14:34:00.361][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687718040357
+[hlog][1t][2023-06-25 14:34:00.366][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 14:34:00.367][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 14:34:00.370][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Starting ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:34:00.399][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat started on port(s): 8090 (http) with context path ''
+[hlog][1t][2023-06-25 14:34:00.403][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 14:34:00.410][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 14:34:00.443][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 14:34:00.582][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.Metadata][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 14:34:00.586][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Discovered group coordinator danqius-air:9092 (id: 2147483647 rack: null)
+[hlog][1t][2023-06-25 14:34:00.588][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 14:34:00.613][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 14:34:00.641][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Started BankPortalApplication in 3.757 seconds (JVM running for 5.324)
+[hlog][1t][2023-06-25 14:34:00.680][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[hlog][1t][2023-06-25 14:34:00.680][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 14:34:00.712][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Finished assignment for group at generation 23: {consumer-transactionGroup-1-8a3acef6-530e-4b62-b151-acf2f2faa48e=Assignment(partitions=[transactionTopic-0])}
+[hlog][1t][2023-06-25 14:34:00.792][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Successfully joined group with generation 23
+[hlog][1t][2023-06-25 14:34:00.795][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Adding newly assigned partitions: transactionTopic-0
+[hlog][1t][2023-06-25 14:34:00.837][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Setting offset for partition transactionTopic-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[danqius-air:9092 (id: 0 rack: null)], epoch=0}}
+[hlog][1t][2023-06-25 14:34:00.838][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions assigned: [transactionTopic-0]
+[hlog][1t][2023-06-25 14:34:08.288][INFO][http-nio-8090-exec-1][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 14:34:08.289][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Initializing Servlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 14:34:08.311][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Completed initialization in 22 ms
+[hlog][1t][2023-06-25 14:34:53.676][INFO][http-nio-8090-exec-5][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Starting...
+[hlog][1t][2023-06-25 14:34:53.913][INFO][http-nio-8090-exec-5][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Start completed.
+[hlog][1t][2023-06-25 14:40:28.938][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Revoke previously assigned partitions transactionTopic-0
+[hlog][1t][2023-06-25 14:40:28.941][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions revoked: [transactionTopic-0]
+[hlog][1t][2023-06-25 14:40:28.941][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Member consumer-transactionGroup-1-8a3acef6-530e-4b62-b151-acf2f2faa48e sending LeaveGroup request to coordinator danqius-air:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[hlog][1t][2023-06-25 14:40:28.944][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 14:40:28.944][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService
+[hlog][1t][2023-06-25 14:40:29.046][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer][,,][,,] - transactionGroup: Consumer stopped
+[hlog][1t][2023-06-25 14:40:29.050][INFO][SpringContextShutdownHook][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Shutting down ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:40:29.053][INFO][SpringContextShutdownHook][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Shutdown initiated...
+[hlog][1t][2023-06-25 14:40:29.125][INFO][SpringContextShutdownHook][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Shutdown completed.
+[hlog][1t][2023-06-25 14:40:59.497][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 14:40:59.511][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Starting BankPortalApplication on Danqius-Air with PID 67856 (/Users/danqiufu/Desktop/bankPortal/target/classes started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 14:40:59.513][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 14:40:59.839][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 14:41:01.027][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat initialized with port(s): 8090 (http)
+[hlog][1t][2023-06-25 14:41:01.033][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Initializing ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:41:01.034][INFO][main][org.apache.catalina.core.StandardService][,,][,,] - Starting service [Tomcat]
+[hlog][1t][2023-06-25 14:41:01.034][INFO][main][org.apache.catalina.core.StandardEngine][,,][,,] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+[hlog][1t][2023-06-25 14:41:01.109][INFO][main][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring embedded WebApplicationContext
+[hlog][1t][2023-06-25 14:41:01.109][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][,,][,,] - Root WebApplicationContext: initialization completed in 1535 ms
+[hlog][1t][2023-06-25 14:41:02.146][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 14:41:02.248][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:41:02.546][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 14:41:02.598][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 14:41:02.599][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 14:41:02.599][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687718462595
+[hlog][1t][2023-06-25 14:41:02.603][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 14:41:02.604][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 14:41:02.607][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Starting ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 14:41:02.626][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat started on port(s): 8090 (http) with context path ''
+[hlog][1t][2023-06-25 14:41:02.631][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 14:41:02.646][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 14:41:02.684][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 14:41:02.874][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.Metadata][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 14:41:02.876][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Discovered group coordinator danqius-air:9092 (id: 2147483647 rack: null)
+[hlog][1t][2023-06-25 14:41:02.880][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 14:41:02.892][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 14:41:02.921][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[hlog][1t][2023-06-25 14:41:02.921][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 14:41:02.928][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Started BankPortalApplication in 3.777 seconds (JVM running for 4.836)
+[hlog][1t][2023-06-25 14:41:02.950][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Finished assignment for group at generation 25: {consumer-transactionGroup-1-dc498ce3-3a9f-4ba5-9714-a7083a036ede=Assignment(partitions=[transactionTopic-0])}
+[hlog][1t][2023-06-25 14:41:02.962][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Successfully joined group with generation 25
+[hlog][1t][2023-06-25 14:41:02.965][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Adding newly assigned partitions: transactionTopic-0
+[hlog][1t][2023-06-25 14:41:02.974][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Setting offset for partition transactionTopic-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[danqius-air:9092 (id: 0 rack: null)], epoch=0}}
+[hlog][1t][2023-06-25 14:41:02.975][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions assigned: [transactionTopic-0]
+[hlog][1t][2023-06-25 14:41:07.220][INFO][http-nio-8090-exec-1][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 14:41:07.222][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Initializing Servlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 14:41:07.243][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Completed initialization in 21 ms
+[hlog][1t][2023-06-25 14:41:29.640][INFO][http-nio-8090-exec-6][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Starting...
+[hlog][1t][2023-06-25 14:41:29.849][INFO][http-nio-8090-exec-6][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Start completed.
+[hlog][1t][2023-06-25 14:42:09.531][INFO][http-nio-8090-exec-9][org.apache.kafka.clients.producer.ProducerConfig][,,][,,] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[hlog][1t][2023-06-25 14:42:09.556][INFO][http-nio-8090-exec-9][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 14:42:09.558][INFO][http-nio-8090-exec-9][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 14:42:09.558][INFO][http-nio-8090-exec-9][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687718529556
+[hlog][1t][2023-06-25 14:42:09.597][INFO][kafka-producer-network-thread | producer-1][org.apache.kafka.clients.Metadata][,,][,,] - [Producer clientId=producer-1] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 14:42:09.858][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.message.impl.BankPortalMessageListenerImpl][,,][,,] - receiver message key:818ea77288674a92be931023ad9c8b25 value:{"accountId":1,"amount":"100","guid":"818ea77288674a92be931023ad9c8b25","sourceBankCode":"string","sourceCurrency":"USD","sourceId":4,"targetCurrency":"CNY"}
+[hlog][1t][2023-06-25 14:42:11.660][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.service.impl.TransactionRecordsServiceImpl][,,][,,] - convert sourceCurrency to targetCurrency rate:0.1393
+[hlog][1t][2023-06-25 14:42:11.758][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.message.impl.BankPortalMessageListenerImpl][,,][,,] - message handler success
+[hlog][1t][2023-06-25 14:42:39.595][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Revoke previously assigned partitions transactionTopic-0
+[hlog][1t][2023-06-25 14:42:39.605][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions revoked: [transactionTopic-0]
+[hlog][1t][2023-06-25 14:42:39.605][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Member consumer-transactionGroup-1-dc498ce3-3a9f-4ba5-9714-a7083a036ede sending LeaveGroup request to coordinator danqius-air:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[hlog][1t][2023-06-25 14:42:39.607][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 14:42:39.607][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService
+[hlog][1t][2023-06-25 14:42:39.640][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer][,,][,,] - transactionGroup: Consumer stopped
+[hlog][1t][2023-06-25 14:42:39.643][INFO][SpringContextShutdownHook][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Shutting down ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 14:42:39.645][INFO][SpringContextShutdownHook][org.apache.kafka.clients.producer.KafkaProducer][,,][,,] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+[hlog][1t][2023-06-25 14:42:39.650][INFO][SpringContextShutdownHook][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Shutdown initiated...
+[hlog][1t][2023-06-25 14:42:39.674][INFO][SpringContextShutdownHook][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Shutdown completed.
+[hlog][1t][2023-06-25 15:56:45.028][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.synpulse.portal.BankPortalApplicationTests], using SpringBootContextLoader
+[hlog][1t][2023-06-25 15:56:45.047][INFO][main][org.springframework.test.context.support.AbstractContextLoader][,,][,,] - Could not detect default resource locations for test class [com.synpulse.portal.BankPortalApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[hlog][1t][2023-06-25 15:56:45.050][INFO][main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils][,,][,,] - Could not detect default configuration classes for test class [com.synpulse.portal.BankPortalApplicationTests]: BankPortalApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[hlog][1t][2023-06-25 15:56:45.386][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Found @SpringBootConfiguration com.synpulse.portal.BankPortalApplication for test class com.synpulse.portal.BankPortalApplicationTests
+[hlog][1t][2023-06-25 15:56:45.648][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[hlog][1t][2023-06-25 15:56:45.670][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d61eb55, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@222a59e6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c7a164b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c2bb6e0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e62d773, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4ef74c30, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7283d3eb, org.springframework.test.context.event.EventPublishingTestExecutionListener@638ef7ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4bff7da0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3f1d2e23, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@536dbea0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@47c81abf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@776a6d9b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@21d03963]
+[hlog][1t][2023-06-25 15:56:46.239][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - Starting BankPortalApplicationTests on Danqius-Air with PID 72922 (started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 15:56:46.249][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 15:56:46.408][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 15:56:47.604][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 15:56:57.052][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 15:56:58.216][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 15:56:59.950][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 15:57:00.284][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 15:57:00.286][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 15:57:00.287][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687723020275
+[hlog][1t][2023-06-25 15:57:00.296][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 15:57:00.301][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 15:57:00.342][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 15:57:00.399][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 15:57:00.556][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 15:57:01.248][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 15:57:01.258][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.Metadata][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 15:57:01.269][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Discovered group coordinator danqius-air:9092 (id: 2147483647 rack: null)
+[hlog][1t][2023-06-25 15:57:01.298][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 15:57:01.367][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - Started BankPortalApplicationTests in 15.607 seconds (JVM running for 17.841)
+[hlog][1t][2023-06-25 15:57:01.411][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[hlog][1t][2023-06-25 15:57:01.415][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 15:57:01.605][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Finished assignment for group at generation 27: {consumer-transactionGroup-1-693eb0f1-69ab-4c62-ac00-6baa43d63b42=Assignment(partitions=[transactionTopic-0])}
+[hlog][1t][2023-06-25 15:57:01.742][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Successfully joined group with generation 27
+[hlog][1t][2023-06-25 15:57:01.764][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Adding newly assigned partitions: transactionTopic-0
+[hlog][1t][2023-06-25 15:57:01.861][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Setting offset for partition transactionTopic-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[danqius-air:9092 (id: 0 rack: null)], epoch=0}}
+[hlog][1t][2023-06-25 15:57:01.974][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions assigned: [transactionTopic-0]
+[hlog][1t][2023-06-25 15:57:02.396][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Revoke previously assigned partitions transactionTopic-0
+[hlog][1t][2023-06-25 15:57:02.407][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions revoked: [transactionTopic-0]
+[hlog][1t][2023-06-25 15:57:02.409][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Member consumer-transactionGroup-1-693eb0f1-69ab-4c62-ac00-6baa43d63b42 sending LeaveGroup request to coordinator danqius-air:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[hlog][1t][2023-06-25 15:57:02.417][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 15:57:02.419][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService
+[hlog][1t][2023-06-25 15:57:02.509][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer][,,][,,] - transactionGroup: Consumer stopped
+[hlog][1t][2023-06-25 15:57:02.518][INFO][SpringContextShutdownHook][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Shutting down ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 15:58:31.303][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.synpulse.portal.BankPortalApplicationTests], using SpringBootContextLoader
+[hlog][1t][2023-06-25 15:58:31.310][INFO][main][org.springframework.test.context.support.AbstractContextLoader][,,][,,] - Could not detect default resource locations for test class [com.synpulse.portal.BankPortalApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[hlog][1t][2023-06-25 15:58:31.312][INFO][main][org.springframework.test.context.support.AnnotationConfigContextLoaderUtils][,,][,,] - Could not detect default configuration classes for test class [com.synpulse.portal.BankPortalApplicationTests]: BankPortalApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[hlog][1t][2023-06-25 15:58:31.541][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Found @SpringBootConfiguration com.synpulse.portal.BankPortalApplication for test class com.synpulse.portal.BankPortalApplicationTests
+[hlog][1t][2023-06-25 15:58:31.753][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+[hlog][1t][2023-06-25 15:58:31.781][INFO][main][org.springframework.boot.test.context.SpringBootTestContextBootstrapper][,,][,,] - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7d61eb55, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@222a59e6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6c7a164b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c2bb6e0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3e62d773, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4ef74c30, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7283d3eb, org.springframework.test.context.event.EventPublishingTestExecutionListener@638ef7ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4bff7da0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3f1d2e23, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@536dbea0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@47c81abf, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@776a6d9b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@21d03963]
+[hlog][1t][2023-06-25 15:58:32.305][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - Starting BankPortalApplicationTests on Danqius-Air with PID 73055 (started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 15:58:32.308][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 15:58:32.392][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 15:58:33.529][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 15:58:41.180][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 15:58:42.363][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 15:58:43.378][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 15:58:43.679][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 15:58:43.680][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 15:58:43.680][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687723123668
+[hlog][1t][2023-06-25 15:58:43.688][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 15:58:43.695][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 15:58:43.728][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 15:58:43.782][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 15:58:43.990][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 15:58:44.518][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 15:58:44.578][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.Metadata][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 15:58:44.586][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Discovered group coordinator danqius-air:9092 (id: 2147483647 rack: null)
+[hlog][1t][2023-06-25 15:58:44.608][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 15:58:44.639][INFO][main][com.synpulse.portal.BankPortalApplicationTests][,,][,,] - Started BankPortalApplicationTests in 12.792 seconds (JVM running for 14.766)
+[hlog][1t][2023-06-25 15:58:44.707][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[hlog][1t][2023-06-25 15:58:44.709][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 15:58:44.867][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Finished assignment for group at generation 29: {consumer-transactionGroup-1-34278933-a8c9-45db-8bf6-ee882787f6c8=Assignment(partitions=[transactionTopic-0])}
+[hlog][1t][2023-06-25 15:58:44.941][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Successfully joined group with generation 29
+[hlog][1t][2023-06-25 15:58:44.970][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Adding newly assigned partitions: transactionTopic-0
+[hlog][1t][2023-06-25 15:58:45.017][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Setting offset for partition transactionTopic-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[danqius-air:9092 (id: 0 rack: null)], epoch=0}}
+[hlog][1t][2023-06-25 15:58:45.029][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions assigned: [transactionTopic-0]
+[hlog][1t][2023-06-25 15:58:45.682][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Revoke previously assigned partitions transactionTopic-0
+[hlog][1t][2023-06-25 15:58:45.685][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions revoked: [transactionTopic-0]
+[hlog][1t][2023-06-25 15:58:45.686][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Member consumer-transactionGroup-1-34278933-a8c9-45db-8bf6-ee882787f6c8 sending LeaveGroup request to coordinator danqius-air:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[hlog][1t][2023-06-25 15:58:45.689][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 15:58:45.690][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService
+[hlog][1t][2023-06-25 15:58:45.749][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer][,,][,,] - transactionGroup: Consumer stopped
+[hlog][1t][2023-06-25 15:58:45.754][INFO][SpringContextShutdownHook][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Shutting down ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 16:10:18.539][INFO][background-preinit][org.hibernate.validator.internal.util.Version][,,][,,] - HV000001: Hibernate Validator 6.0.1.Final
+[hlog][1t][2023-06-25 16:10:18.553][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Starting BankPortalApplication on Danqius-Air with PID 73819 (/Users/danqiufu/Desktop/bankPortal/target/classes started by danqiufu in /Users/danqiufu/Desktop/bankPortal)
+[hlog][1t][2023-06-25 16:10:18.554][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - No active profile set, falling back to default profiles: default
+[hlog][1t][2023-06-25 16:10:19.474][WARN][background-preinit][org.springframework.http.converter.json.Jackson2ObjectMapperBuilder][,,][,,] - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+[hlog][1t][2023-06-25 16:10:21.909][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat initialized with port(s): 8090 (http)
+[hlog][1t][2023-06-25 16:10:21.924][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Initializing ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 16:10:21.925][INFO][main][org.apache.catalina.core.StandardService][,,][,,] - Starting service [Tomcat]
+[hlog][1t][2023-06-25 16:10:21.925][INFO][main][org.apache.catalina.core.StandardEngine][,,][,,] - Starting Servlet engine: [Apache Tomcat/9.0.46]
+[hlog][1t][2023-06-25 16:10:22.055][INFO][main][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring embedded WebApplicationContext
+[hlog][1t][2023-06-25 16:10:22.055][INFO][main][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][,,][,,] - Root WebApplicationContext: initialization completed in 3328 ms
+[hlog][1t][2023-06-25 16:10:24.385][INFO][main][springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping][,,][,,] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[hlog][1t][2023-06-25 16:10:24.531][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][,,][,,] - Initializing ExecutorService 'applicationTaskExecutor'
+[hlog][1t][2023-06-25 16:10:25.055][INFO][main][org.apache.kafka.clients.consumer.ConsumerConfig][,,][,,] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transactionGroup
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[hlog][1t][2023-06-25 16:10:25.262][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 16:10:25.263][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 16:10:25.263][INFO][main][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687723825256
+[hlog][1t][2023-06-25 16:10:25.274][INFO][main][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Subscribed to topic(s): transactionTopic
+[hlog][1t][2023-06-25 16:10:25.280][INFO][main][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Initializing ExecutorService
+[hlog][1t][2023-06-25 16:10:25.303][INFO][main][org.apache.coyote.http11.Http11NioProtocol][,,][,,] - Starting ProtocolHandler ["http-nio-8090"]
+[hlog][1t][2023-06-25 16:10:25.359][INFO][main][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][,,][,,] - Tomcat started on port(s): 8090 (http) with context path ''
+[hlog][1t][2023-06-25 16:10:25.371][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Context refreshed
+[hlog][1t][2023-06-25 16:10:25.410][INFO][main][springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper][,,][,,] - Found 1 custom documentation plugin(s)
+[hlog][1t][2023-06-25 16:10:25.507][INFO][main][springfox.documentation.spring.web.scanners.ApiListingReferenceScanner][,,][,,] - Scanning for api listing references
+[hlog][1t][2023-06-25 16:10:26.098][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.Metadata][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 16:10:26.103][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Discovered group coordinator danqius-air:9092 (id: 2147483647 rack: null)
+[hlog][1t][2023-06-25 16:10:26.133][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 16:10:26.205][INFO][main][springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator][,,][,,] - Generating unique operation named: TransactionsUsingGET_1
+[hlog][1t][2023-06-25 16:10:26.250][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group
+[hlog][1t][2023-06-25 16:10:26.251][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] (Re-)joining group
+[hlog][1t][2023-06-25 16:10:26.347][INFO][main][com.synpulse.portal.BankPortalApplication][,,][,,] - Started BankPortalApplication in 8.357 seconds (JVM running for 10.753)
+[hlog][1t][2023-06-25 16:10:26.373][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Finished assignment for group at generation 31: {consumer-transactionGroup-1-bd804d6b-08ab-4a45-859e-2e02d39327b5=Assignment(partitions=[transactionTopic-0])}
+[hlog][1t][2023-06-25 16:10:26.475][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Successfully joined group with generation 31
+[hlog][1t][2023-06-25 16:10:26.500][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Adding newly assigned partitions: transactionTopic-0
+[hlog][1t][2023-06-25 16:10:26.531][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Setting offset for partition transactionTopic-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[danqius-air:9092 (id: 0 rack: null)], epoch=0}}
+[hlog][1t][2023-06-25 16:10:26.540][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions assigned: [transactionTopic-0]
+[hlog][1t][2023-06-25 16:11:00.588][INFO][http-nio-8090-exec-1][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][,,][,,] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 16:11:00.593][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Initializing Servlet 'dispatcherServlet'
+[hlog][1t][2023-06-25 16:11:00.667][INFO][http-nio-8090-exec-1][org.springframework.web.servlet.DispatcherServlet][,,][,,] - Completed initialization in 74 ms
+[hlog][1t][2023-06-25 16:25:56.254][INFO][http-nio-8090-exec-9][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Starting...
+[hlog][1t][2023-06-25 16:25:56.723][INFO][http-nio-8090-exec-9][com.zaxxer.hikari.HikariDataSource][,,][,,] - DataSourceHikariCP - Start completed.
+[hlog][1t][2023-06-25 16:28:38.331][INFO][http-nio-8090-exec-2][org.apache.kafka.clients.producer.ProducerConfig][,,][,,] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 3
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+[hlog][1t][2023-06-25 16:28:38.390][INFO][http-nio-8090-exec-2][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka version: 2.5.1
+[hlog][1t][2023-06-25 16:28:38.391][INFO][http-nio-8090-exec-2][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka commitId: 0efa8fb0f4c73d92
+[hlog][1t][2023-06-25 16:28:38.391][INFO][http-nio-8090-exec-2][org.apache.kafka.common.utils.AppInfoParser][,,][,,] - Kafka startTimeMs: 1687724918390
+[hlog][1t][2023-06-25 16:28:38.680][INFO][kafka-producer-network-thread | producer-1][org.apache.kafka.clients.Metadata][,,][,,] - [Producer clientId=producer-1] Cluster ID: qmimGhZoSiqFIMp3QwMHAQ
+[hlog][1t][2023-06-25 16:28:39.154][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.message.impl.BankPortalMessageListenerImpl][,,][,,] - receiver message key:10dc19d07e204bb8870c2514a1c1869f value:{"accountId":1,"amount":"100","guid":"10dc19d07e204bb8870c2514a1c1869f","sourceBankCode":"string","sourceCurrency":"USD","sourceId":5,"targetCurrency":"CNY"}
+[hlog][1t][2023-06-25 16:28:41.336][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.service.impl.TransactionRecordsServiceImpl][,,][,,] - convert sourceCurrency to targetCurrency rate:0.1393
+[hlog][1t][2023-06-25 16:28:41.887][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][com.synpulse.portal.message.impl.BankPortalMessageListenerImpl][,,][,,] - message handler success
+[hlog][1t][2023-06-25 16:30:24.589][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Revoke previously assigned partitions transactionTopic-0
+[hlog][1t][2023-06-25 16:30:24.611][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.kafka.listener.KafkaMessageListenerContainer][,,][,,] - transactionGroup: partitions revoked: [transactionTopic-0]
+[hlog][1t][2023-06-25 16:30:24.619][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.internals.AbstractCoordinator][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Member consumer-transactionGroup-1-bd804d6b-08ab-4a45-859e-2e02d39327b5 sending LeaveGroup request to coordinator danqius-air:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+[hlog][1t][2023-06-25 16:30:24.682][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.apache.kafka.clients.consumer.KafkaConsumer][,,][,,] - [Consumer clientId=consumer-transactionGroup-1, groupId=transactionGroup] Unsubscribed all topics or patterns and assigned partitions
+[hlog][1t][2023-06-25 16:30:24.683][INFO][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1][org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][,,][,,] - Shutting down ExecutorService

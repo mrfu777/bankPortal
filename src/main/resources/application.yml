@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bank_portal?characterEncoding=utf-8&useSSL=false
+    #url: jdbc:mysql://bank-mysql:3306/bank_portal?characterEncoding=utf-8&useSSL=false
+    username: root
+    password:
+    hikari:
+      connection-timeout: 30000
+      minimum-idle: 10
+      maximum-pool-size: 20
+      auto-commit: false
+      idle-timeout: 600000
+      pool-name: DataSourceHikariCP
+      max-lifetime: 1800000
+      connection-test-query: select 1
+  kafka:
+    bootstrap-servers: localhost:9092 # kafka cluster info
+    #bootstrap-servers: bank-kafka:9092 # kafka cluster info
+    # producer
+    producer:
+      # retry times
+      retries: 3
+      batch-size: 16384 #batch size，16K
+      buffer-memory: 33554432 #buffer size
+      acks: 1
+      # message key encode
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    # consumer
+    consumer:
+      #consumer group
+      group-id: transactionGroup
+      #enable auto commit
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    # listener
+    listener:
+      # manual ack
+      ack-mode: manual_immediate
+
+mybatis-plus:
+  #mapper xml file location
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    #mybatis log impl
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  port: 8090
+

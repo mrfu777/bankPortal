@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bank
+  namespace: default
+  labels:
+    app: bank
+spec:
+  type: NodePort
+  ports:
+    - port: 8090
+      nodePort: 30090
+  selector:
+    app: bank
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bank
+  labels:
+    app: bank
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bank
+  template:
+    metadata:
+      labels:
+        app: bank
+    spec:
+      containers:
+        - name: bank
+          image: bank:2.0
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8090
